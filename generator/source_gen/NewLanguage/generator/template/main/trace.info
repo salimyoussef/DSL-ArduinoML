@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root>
+    <file name="QueriesGenerated.java">
+      <unit at="13,0,26,0" name="NewLanguage.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/2188729726962805385">
+    <file name="QueriesGenerated.java">
+      <node id="2188729726963002156" at="22,120,23,192" concept="0" />
+      <scope id="2188729726963002150" at="22,120,23,192" />
+    </file>
+  </root>
+  <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/2188729726962929984">
+    <file name="QueriesGenerated.java">
+      <node id="2188729726962960691" at="16,112,17,185" concept="0" />
+      <scope id="2188729726962960685" at="16,112,17,185" />
+    </file>
+  </root>
+  <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/2188729726962985408">
+    <file name="QueriesGenerated.java">
+      <node id="2188729726962994696" at="19,112,20,185" concept="0" />
+      <scope id="2188729726962994690" at="19,112,20,185" />
+    </file>
+  </root>
+</debug-info>
+
