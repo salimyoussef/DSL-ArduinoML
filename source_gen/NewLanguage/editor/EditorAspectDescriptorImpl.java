@@ -15,9 +15,15 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   public Collection<ConceptEditor> getEditors(ConceptDescriptor descriptor) {
     switch (Arrays.binarySearch(stringSwitchCases_xbvbvu_a0a0b, descriptor.getConceptFqName())) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new Actuator_Editor());
+        return Collections.<ConceptEditor>singletonList(new Action_Editor());
       case 1:
+        return Collections.<ConceptEditor>singletonList(new Actuator_Editor());
+      case 2:
         return Collections.<ConceptEditor>singletonList(new Sensor_Editor());
+      case 3:
+        return Collections.<ConceptEditor>singletonList(new State_Editor());
+      case 4:
+        return Collections.<ConceptEditor>singletonList(new Transition_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
@@ -27,5 +33,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"NewLanguage.structure.Actuator", "NewLanguage.structure.Sensor"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"NewLanguage.structure.Action", "NewLanguage.structure.Actuator", "NewLanguage.structure.Sensor", "NewLanguage.structure.State", "NewLanguage.structure.Transition"};
 }

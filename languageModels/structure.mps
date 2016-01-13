@@ -110,7 +110,7 @@
     </node>
     <node concept="1TJgyj" id="1TvVxssXYsU" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="transitions" />
+      <property role="20kJfa" value="transition" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1TvVxssXXTy" resolve="Transition" />
     </node>
