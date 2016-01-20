@@ -7,6 +7,7 @@ import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
@@ -23,11 +24,17 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_2188729726962994689(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cef0996L, 0x1e5fee171cefceceL, "pin"));
   }
+  public static Object propertyMacro_GetPropertyValue_3946403736458397964(final PropertyMacroContext _context) {
+    return (SPropertyOperations.getBoolean_def(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cf7dd9bL, "NewLanguage.structure.State"), false, false), MetaAdapterFactory.getProperty(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cf7dd9bL, 0x36c4714a13e263a4L, "typeIO"), null) ? "analog" : "digital");
+  }
   public static Object propertyMacro_GetPropertyValue_7990802021749924839(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cf7de31L, 0x1e5fee171cf7df11L, "actuator")), MetaAdapterFactory.getProperty(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cef0996L, 0x1e5fee171cefceceL, "pin"));
   }
   public static Object propertyMacro_GetPropertyValue_7990802021749975172(final PropertyMacroContext _context) {
     return (SPropertyOperations.getBoolean_def(_context.getNode(), MetaAdapterFactory.getProperty(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cf7de31L, 0x1e5fee171cf7defcL, "status"), null) ? "HIGH" : "LOW");
+  }
+  public static Object propertyMacro_GetPropertyValue_3946403736458512253(final PropertyMacroContext _context) {
+    return (SPropertyOperations.getBoolean_def(SNodeOperations.getNodeAncestor(_context.getNode(), MetaAdapterFactory.getConcept(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cf7dd9bL, "NewLanguage.structure.State"), false, false), MetaAdapterFactory.getProperty(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cf7dd9bL, 0x36c4714a13e263a4L, "typeIO"), null) ? "analog" : "digital");
   }
   public static Object propertyMacro_GetPropertyValue_7990802021750038759(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getReferenceLink(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cf7de62L, 0x1e5fee171cf7dec2L, "sensor")), MetaAdapterFactory.getProperty(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cef0996L, 0x1e5fee171cefceceL, "pin"));

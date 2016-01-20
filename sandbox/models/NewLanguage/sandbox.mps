@@ -10,6 +10,7 @@
     <language id="24f6669a-8ba1-4c5a-bbc4-b68f2c44cf80" name="NewLanguage">
       <concept id="2188729726963015217" name="NewLanguage.structure.Action" flags="ng" index="2E30A">
         <property id="2188729726963015420" name="status" index="2E33F" />
+        <property id="3946403736458380806" name="typeIO" index="_93tc" />
         <reference id="2188729726963015441" name="actuator" index="2E346" />
       </concept>
       <concept id="2188729726963015266" name="NewLanguage.structure.Transition" flags="ng" index="2E31P">
@@ -18,6 +19,7 @@
         <reference id="2188729726963015362" name="sensor" index="2E33l" />
       </concept>
       <concept id="2188729726963015067" name="NewLanguage.structure.State" flags="ng" index="2E3ec">
+        <property id="3946403736458519460" name="typeIO" index="_9xbI" />
         <child id="2188729726963017526" name="actions" index="2E0$x" />
         <child id="2188729726963017530" name="transition" index="2E0$H" />
       </concept>
@@ -25,7 +27,7 @@
       <concept id="2188729726962486995" name="NewLanguage.structure.Actuator" flags="ng" index="2G234" />
       <concept id="2188729726962487004" name="NewLanguage.structure.App" flags="ng" index="2G23b">
         <reference id="2188729726963015875" name="init_state" index="2E0Vk" />
-        <child id="2188729726963015825" name="state" index="2E0U6" />
+        <child id="2188729726963015825" name="states" index="2E0U6" />
         <child id="2188729726962487015" name="bricks" index="2G23K" />
       </concept>
       <concept id="2188729726962436502" name="NewLanguage.structure.Brick" flags="ng" index="2Geu1">
@@ -43,8 +45,10 @@
     <ref role="2E0Vk" node="1TvVxssY6jU" resolve="off" />
     <node concept="2E3ec" id="1TvVxssY6jU" role="2E0U6">
       <property role="TrG5h" value="off" />
+      <property role="_9xbI" value="true" />
       <node concept="2E30A" id="1TvVxssY6jV" role="2E0$x">
         <property role="2E33F" value="false" />
+        <property role="_93tc" value="false" />
         <ref role="2E346" node="1TvVxssWUTG" resolve="red_led" />
       </node>
       <node concept="2E31P" id="1TvVxssY6jW" role="2E0$H">
@@ -55,8 +59,10 @@
     </node>
     <node concept="2E3ec" id="1TvVxssYa$q" role="2E0U6">
       <property role="TrG5h" value="on" />
+      <property role="_9xbI" value="true" />
       <node concept="2E30A" id="1TvVxssYa$r" role="2E0$x">
         <property role="2E33F" value="true" />
+        <property role="_93tc" value="false" />
         <ref role="2E346" node="1TvVxssWUTG" resolve="red_led" />
       </node>
       <node concept="2E31P" id="1TvVxssYa$s" role="2E0$H">

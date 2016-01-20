@@ -46,7 +46,8 @@ public class State_Editor extends DefaultNodeEditor {
     style.set(StyleAttributes.SELECTABLE, 0, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(this.createProperty_sjqidp_a0a(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_sjqidp_b0a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_sjqidp_b0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_sjqidp_c0a(editorContext, node));
     return editorCell;
   }
   private EditorCell createProperty_sjqidp_a0a(EditorContext editorContext, SNode node) {
@@ -65,9 +66,25 @@ public class State_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_sjqidp_b0a(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_sjqidp_b0a(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("typeIO");
+    provider.setNoTargetText("<no typeIO>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_typeIO");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createConstant_sjqidp_c0a(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "{");
-    editorCell.setCellId("Constant_sjqidp_b0a");
+    editorCell.setCellId("Constant_sjqidp_c0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
