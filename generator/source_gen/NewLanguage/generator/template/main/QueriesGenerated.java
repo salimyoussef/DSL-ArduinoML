@@ -44,14 +44,17 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_7990802021750242765(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
-  public static SNode sourceNodeQuery_7990802021750243822(final SourceSubstituteMacroNodeContext _context) {
+  public static SNode sourceNodeQuery_3946403736458081796(final SourceSubstituteMacroNodeContext _context) {
     _context.putSessionObject("current_state_name", SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cf7dd9bL, 0x1e5fee171cf7e73aL, "transition"));
   }
   public static Iterable<SNode> sourceNodesQuery_2188729726963002149(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cefcedcL, 0x1e5fee171cefcee7L, "bricks"));
   }
-  public static Iterable<SNode> sourceNodesQuery_7990802021750243359(final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable<SNode> sourceNodesQuery_3946403736458055263(final SourceSubstituteMacroNodesContext _context) {
+    return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cefcedcL, 0x1e5fee171cf7e091L, "states"));
+  }
+  public static Iterable<SNode> sourceNodesQuery_3946403736458082565(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x24f6669a8ba14c5aL, 0xbbc4b68f2c44cf80L, 0x1e5fee171cf7dd9bL, 0x1e5fee171cf7e736L, "actions"));
   }
 }
