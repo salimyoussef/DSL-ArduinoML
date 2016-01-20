@@ -45,57 +45,33 @@
       <property role="TrG5h" value="off" />
       <node concept="2E30A" id="1TvVxssY6jV" role="2E0$x">
         <property role="2E33F" value="false" />
-        <ref role="2E346" node="1TvVxssWUTG" resolve="buzzer" />
-      </node>
-      <node concept="2E30A" id="2PppsXCamUc" role="2E0$x">
-        <property role="2E33F" value="false" />
-        <ref role="2E346" node="2PppsXCamU7" resolve="red_led" />
+        <ref role="2E346" node="1TvVxssWUTG" resolve="red_led" />
       </node>
       <node concept="2E31P" id="1TvVxssY6jW" role="2E0$H">
         <property role="2E32R" value="true" />
         <ref role="2E33l" node="1TvVxssWUTP" resolve="button" />
-        <ref role="2E332" node="1TvVxssYa$q" resolve="on_buzzer" />
+        <ref role="2E332" node="1TvVxssYa$q" resolve="on" />
       </node>
     </node>
     <node concept="2E3ec" id="1TvVxssYa$q" role="2E0U6">
-      <property role="TrG5h" value="on_buzzer" />
+      <property role="TrG5h" value="on" />
       <node concept="2E30A" id="1TvVxssYa$r" role="2E0$x">
         <property role="2E33F" value="true" />
-        <ref role="2E346" node="1TvVxssWUTG" resolve="buzzer" />
+        <ref role="2E346" node="1TvVxssWUTG" resolve="red_led" />
       </node>
       <node concept="2E31P" id="1TvVxssYa$s" role="2E0$H">
-        <property role="2E32R" value="true" />
-        <ref role="2E33l" node="1TvVxssWUTP" resolve="button" />
-        <ref role="2E332" node="2PppsXCadyQ" resolve="on_led" />
-      </node>
-    </node>
-    <node concept="2E3ec" id="2PppsXCadyQ" role="2E0U6">
-      <property role="TrG5h" value="on_led" />
-      <node concept="2E30A" id="54mLSIf$EtV" role="2E0$x">
-        <property role="2E33F" value="true" />
-        <ref role="2E346" node="2PppsXCamU7" resolve="red_led" />
-      </node>
-      <node concept="2E30A" id="54mLSIf$Eu1" role="2E0$x">
-        <property role="2E33F" value="false" />
-        <ref role="2E346" node="1TvVxssWUTG" resolve="buzzer" />
-      </node>
-      <node concept="2E31P" id="2PppsXCadyS" role="2E0$H">
         <property role="2E32R" value="true" />
         <ref role="2E33l" node="1TvVxssWUTP" resolve="button" />
         <ref role="2E332" node="1TvVxssY6jU" resolve="off" />
       </node>
     </node>
     <node concept="2G234" id="1TvVxssWUTG" role="2G23K">
-      <property role="TrG5h" value="buzzer" />
+      <property role="TrG5h" value="red_led" />
       <property role="2G23p" value="12" />
     </node>
     <node concept="2F4My" id="1TvVxssWUTP" role="2G23K">
       <property role="TrG5h" value="button" />
       <property role="2G23p" value="9" />
-    </node>
-    <node concept="2G234" id="2PppsXCamU7" role="2G23K">
-      <property role="TrG5h" value="red_led" />
-      <property role="2G23p" value="11" />
     </node>
   </node>
 </model>
