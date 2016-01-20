@@ -24,6 +24,7 @@ public class Actuator_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createProperty_ik8pix_b0(editorContext, node));
     editorCell.addEditorCell(this.createConstant_ik8pix_c0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_ik8pix_d0(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_ik8pix_e0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_ik8pix_a0(EditorContext editorContext, SNode node) {
@@ -61,6 +62,22 @@ public class Actuator_Editor extends DefaultNodeEditor {
     EditorCell editorCell;
     editorCell = provider.createEditorCell(editorContext);
     editorCell.setCellId("property_pin");
+    editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+    SNode attributeConcept = provider.getRoleAttribute();
+    Class attributeKind = provider.getRoleAttributeClass();
+    if (attributeConcept != null) {
+      EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+      return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+    } else
+    return editorCell;
+  }
+  private EditorCell createProperty_ik8pix_e0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+    provider.setRole("typeIO");
+    provider.setNoTargetText("<no typeIO>");
+    EditorCell editorCell;
+    editorCell = provider.createEditorCell(editorContext);
+    editorCell.setCellId("property_typeIO");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();

@@ -62,6 +62,10 @@
       <property role="TrG5h" value="pin" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="3r4skCjSZVL" role="1TKVEl">
+      <property role="TrG5h" value="typeIO" />
+      <ref role="AX2Wp" node="3r4skCjRNXn" resolve="IO_TYPE" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1TvVxssVWVj">
     <property role="TrG5h" value="Actuator" />
@@ -102,10 +106,6 @@
   </node>
   <node concept="1TIwiD" id="1TvVxssXXQr">
     <property role="TrG5h" value="State" />
-    <node concept="1TJgyi" id="3r4skCjSAe$" role="1TKVEl">
-      <property role="TrG5h" value="typeIO" />
-      <ref role="AX2Wp" node="3r4skCjRNXn" resolve="IO_TYPE" />
-    </node>
     <node concept="1TJgyj" id="1TvVxssXYsQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actions" />
