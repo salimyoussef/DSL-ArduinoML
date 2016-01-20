@@ -1,11 +1,11 @@
 # DSL-ArduinoML
 
-### Membres du projet
+# Membres du projet
 - Mahmoud Diallo
 - Hamza Magroun
 - Youssef Salim
 
-~~~bash
+
 #define TEMP 2
 #define BUZZER 12
 #define AlarmOn digitalWrite(BUZZER, HIGH)
@@ -55,4 +55,3 @@ void loop()
 {
 alarmOff();
 }
-~~~

@@ -148,6 +148,10 @@
   <node concept="1TIwiD" id="1TvVxssXXTy">
     <property role="TrG5h" value="Transition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3r4skCjRx4l" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="typeRead" />
+    </node>
     <node concept="1TJgyi" id="1TvVxssXXUw" role="1TKVEl">
       <property role="TrG5h" value="status" />
       <ref role="AX2Wp" node="1TvVxssXXRg" resolve="STATUS" />
